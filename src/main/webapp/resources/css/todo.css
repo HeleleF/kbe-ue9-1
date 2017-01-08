@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('#{resource['css/Quicksand-Regular.ttf']}');
+}
+
+input[type="text"] {
+	font-family: 'Quicksand';
+}
+
+body {
+	font-family: 'Quicksand'; 
+	width: 1200px;
+	height: 1200px;
+}
+
+.table {
+	border: 1px solid black; 
+	border-spacing: 0px;
+}
+
+.tableheader {
+	font-weight: bold;
+	width: 120px;
+	text-align: center;
+}
+
+.row1 {  
+	background-color: white;
+	color: black; 
+	vertical-align: top;
+	text-align: center;
+}
+
+.row2 {
+	background-color: #e6e6e6; /* grau */
+	color: black; 
+	vertical-align: top;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
