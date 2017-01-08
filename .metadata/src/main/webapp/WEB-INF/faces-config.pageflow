@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14819903087830" configfile="/kbe-ue9-1/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="editToDoList.xhtml" id="pf14838936636380" referenceLink="//@navigationRule.2/@navigationCase.1/@toViewId|" outlinks="pf14838936636381 pf14838936636382 pf14838936636383 pf14838972502617" inlinks="pf14838936636381 pf14838936636382 pf14838936636384 pf14838936636385 pf14838972754839 pf148389727548310" path="editToDoList.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="editToDo.xhtml" id="pf14838936636386" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf14838936636384 pf14838936636385" inlinks="pf14838936636383" path="editToDo.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="editInterval.xhtml" id="pf14838972502618" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14838972754839 pf148389727548310" inlinks="pf14838972502617" path="editInterval.xhtml"/>
+  <links id="pf14838936636381" target="pf14838936636380" source="pf14838936636380" outcome="save"/>
+  <links id="pf14838936636382" target="pf14838936636380" source="pf14838936636380" outcome="abbrechen"/>
+  <links id="pf14838936636383" target="pf14838936636386" source="pf14838936636380" outcome="erstellen"/>
+  <links id="pf14838936636384" target="pf14838936636380" source="pf14838936636386" outcome="save"/>
+  <links id="pf14838936636385" target="pf14838936636380" source="pf14838936636386" outcome="abbrechen"/>
+  <links id="pf14838972502617" target="pf14838972502618" source="pf14838936636380" outcome="intervallen"/>
+  <links id="pf14838972754839" target="pf14838936636380" source="pf14838972502618" outcome="save"/>
+  <links id="pf148389727548310" target="pf14838936636380" source="pf14838972502618" outcome="abbrechen"/>
+</pageflow:Pageflow>
