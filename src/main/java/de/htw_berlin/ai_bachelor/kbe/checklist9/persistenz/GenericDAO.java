@@ -1,12 +1,19 @@
 package de.htw_berlin.ai_bachelor.kbe.checklist9.persistenz;
 
 import java.io.Serializable;
-import java.util.*;
+import java.util.List;
 
+import javax.inject.Named;
 import javax.persistence.*;
 import javax.persistence.criteria.CriteriaQuery;
  
-// alles kopiert aus dem Moodle Ding
+/**
+ * Eine abstrakte generische Klasse, die alle wichtigen JPA-Zugriffsmethoden
+ * auf die Datenbank (inkl. eines EntityManager) kapselt.
+ * 
+ * @author Salinger (Moodle)
+ */
+@Named
 public abstract class GenericDAO<T> implements Serializable {
 	
     private static final long serialVersionUID = 1L;

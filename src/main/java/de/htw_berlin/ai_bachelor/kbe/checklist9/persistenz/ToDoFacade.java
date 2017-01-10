@@ -2,6 +2,9 @@ package de.htw_berlin.ai_bachelor.kbe.checklist9.persistenz;
 
 import java.util.List;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import de.htw_berlin.ai_bachelor.kbe.checklist9.model.ToDo;
 
 /**
@@ -9,15 +12,24 @@ import de.htw_berlin.ai_bachelor.kbe.checklist9.model.ToDo;
  * eine Fassade fuer ToDoDAO siehe Aufgabe 9.1 Hinweis 3
  * 
  * TODO: Braucht man try/catch ueberhaupt?
+ * 
+ * Erweitert fuer 9.2 d):
+ * new ToDoDAO() wurde rausgenommen
+ * die @Named Annotation wurde hinzugefuegt,
+ * damit man ToDoFacade in ToDoListMB / ToDoMB injizieren kann
+ * 
+ * das Feld ToDoDAO hat jetzt die @Inject Annotation
  *
  */
+@Named
 public class ToDoFacade {
 
+	@Inject
 	private ToDoDAO _todoDAO;
 
-	public ToDoFacade() {
-		this._todoDAO = new ToDoDAO();
-	}
+//	public ToDoFacade() {
+//		// this._todoDAO = new ToDoDAO();
+//	}
 
 	/**
 	 * zum Speichern eines ToDo-Objektes in die DB

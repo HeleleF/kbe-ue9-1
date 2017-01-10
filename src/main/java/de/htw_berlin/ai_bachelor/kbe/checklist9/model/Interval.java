@@ -25,7 +25,6 @@ public class Interval {
 	}
 
 	public int getMax() {
-		System.out.println("hallo?");
 		return this.max;
 	}
 

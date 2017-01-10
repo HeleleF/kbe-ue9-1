@@ -1,12 +1,19 @@
 package de.htw_berlin.ai_bachelor.kbe.checklist9.mb;
 
-import javax.faces.bean.ApplicationScoped;
-import javax.faces.bean.ManagedBean;
+import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Named;
 
 import de.htw_berlin.ai_bachelor.kbe.checklist9.model.Interval;
 
+/**
+ * Angepasst fuer 9.2 c) :
+ * die @ManagedBean Annotation wurde entfernt
+ * die @Named Annotation wurde hinzugefuegt,
+ * @ApplicationScoped import wurde ersetzt durch javax.enterprise.context
+ *
+ */
+@Named
 @ApplicationScoped
-@ManagedBean
 public class IntervalMB {
 
 	private Interval interval;
